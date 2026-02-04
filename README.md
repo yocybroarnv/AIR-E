@@ -12,19 +12,7 @@ AIR-E is a privacy-safe intelligence layer that detects administrative risk patt
 - **Interactive Dashboards**: Real-time visualization of risk scores and trends
 - **Privacy-Safe**: No biometric or personal data used
 
-## Installation
 
-1. Clone the repository
-2. Install dependencies:
-```bash
-pip install -r requirements.txt
-```
-
-## Running the Application
-
-```bash
-streamlit run app.py
-```
 
 ## Project Structure
 
