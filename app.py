@@ -20,6 +20,19 @@ PROCESSED_FILE = "processed_data.parquet"
 
 def load_data():
     if not os.path.exists(PROCESSED_FILE):
+        with st.spinner("🌌 Core Database missing. Bootstrapping AIR-E Data Engine & ML Pipeline..."):
+            try:
+                import data_engine
+                import ml_engine
+                
+                # Generate a quick-load database size (100k rows) for instant cloud bootstrap
+                data_engine.generate_data(num_rows=100000)
+                ml_engine.process_data()
+            except Exception as e:
+                st.error(f"🚨 Engine Auto-Bootstrap failed: {e}")
+                return pd.DataFrame()
+    
+    if not os.path.exists(PROCESSED_FILE):
         return pd.DataFrame()
     return pd.read_parquet(PROCESSED_FILE)
 
