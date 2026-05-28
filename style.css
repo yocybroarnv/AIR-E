@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+/* Deep Space Background & Global Font Overrides */
+html, body, .stApp, [data-testid="stAppViewContainer"] {
+    font-family: 'Outfit', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+    background-color: #080b10 !important;
+    background-image: 
+        radial-gradient(circle at 15% 50%, rgba(88, 166, 255, 0.05), transparent 25%),
+        radial-gradient(circle at 85% 30%, rgba(188, 140, 255, 0.05), transparent 25%),
+        radial-gradient(at 0% 0%, rgba(88, 166, 255, 0.04) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(188, 140, 255, 0.04) 0px, transparent 50%) !important;
+    color: #e6edf3 !important;
+}
+
+/* Hide Default Streamlit UI Elements */
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+header {background: transparent !important;}
+
+/* Sidebar Customization */
+section[data-testid="stSidebar"] {
+    background-color: #0b0f17 !important;
+    border-right: 1px solid rgba(88, 166, 255, 0.1) !important;
+}
+
+/* Sidebar Image / Branding Logo Styling */
+[data-testid="stSidebar"] img {
+    border-radius: 12px;
+    border: 1px solid rgba(88, 166, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease;
+}
+[data-testid="stSidebar"] img:hover {
+    transform: scale(1.02);
+}
+
+/* Premium Headers */
+.main-header {
+    font-family: 'Space Grotesk', sans-serif !important;
+    font-size: 3rem !important;
+    font-weight: 700 !important;
+    background: linear-gradient(135deg, #58a6ff, #bc8cff, #ff7b72);
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.06rem;
+    filter: drop-shadow(0 2px 10px rgba(88, 166, 255, 0.2));
+}
+
+.sub-header {
+    font-family: 'Outfit', sans-serif !important;
+    font-size: 1rem !important;
+    color: #8b949e !important;
+    text-align: center;
+    margin-bottom: 3.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+    font-weight: 600;
+}
+
+/* Glassmorphic Metric Cards */
+[data-testid="stMetric"], div[data-testid="metric-container"] {
+    background-color: rgba(13, 17, 23, 0.6) !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+    border: 1px solid rgba(88, 166, 255, 0.12) !important;
+    border-radius: 16px !important;
+    padding: 20px !important;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5) !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    position: relative;
+    overflow: hidden;
+}
+
+[data-testid="stMetric"]::before, div[data-testid="metric-container"]::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.05),
+        transparent
+    );
+    transition: 0.5s;
+}
+
+[data-testid="stMetric"]:hover::before, div[data-testid="metric-container"]:hover::before {
+    left: 100%;
+}
+
+[data-testid="stMetric"]:hover, div[data-testid="metric-container"]:hover {
+    transform: translateY(-5px) scale(1.01) !important;
+    border-color: rgba(188, 140, 255, 0.35) !important;
+    box-shadow: 0 15px 50px rgba(88, 166, 255, 0.15) !important;
+}
+
+/* Typography for Metrics */
+[data-testid="stMetricLabel"] {
+    font-family: 'Outfit', sans-serif !important;
+    color: #8b949e !important;
+    font-weight: 600 !important;
+    font-size: 0.85rem !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.08em !important;
+}
+
+[data-testid="stMetricValue"] {
+    font-family: 'Space Grotesk', sans-serif !important;
+    color: #ffffff !important;
+    font-weight: 700 !important;
+    font-size: 2.2rem !important;
+    text-shadow: 0 0 12px rgba(88, 166, 255, 0.3) !important;
+}
+
+/* Positive and Negative Deltas */
+[data-testid="stMetricDelta"] > div {
+    color: #ff7b72 !important; /* Crimson Red for Risk/Negative */
+}
+[data-testid="stMetricDelta"][aria-label*="up"] > div {
+    color: #bc8cff !important; /* Cyber Violet for Positive/Safe */
+}
+
+/* Styled Containers / Chart Backgrounds */
+[data-testid="stVerticalBlock"] > div > div {
+    background: transparent;
+}
+
+/* Modern Glowing Tech Buttons */
+.stButton > button {
+    background-color: transparent !important;
+    background-image: none !important;
+    color: #58a6ff !important;
+    border: 1px solid rgba(88, 166, 255, 0.4) !important;
+    border-radius: 8px !important;
+    padding: 0.5rem 1.5rem !important;
+    font-weight: 600 !important;
+    font-family: 'Outfit', sans-serif !important;
+    transition: all 0.25s ease !important;
+    box-shadow: 0 0 10px rgba(88, 166, 255, 0.1) !important;
+    width: 100%;
+}
+
+.stButton > button:hover {
+    background: linear-gradient(135deg, #58a6ff, #bc8cff) !important;
+    color: #080b10 !important;
+    border-color: transparent !important;
+    box-shadow: 0 0 25px rgba(88, 166, 255, 0.45) !important;
+    transform: translateY(-2px) !important;
+}
+
+.stButton > button:active {
+    transform: translateY(0px) !important;
+}
+
+/* Styled inputs and selections */
+div[data-baseweb="select"] {
+    background-color: #0d1117 !important;
+    border: 1px solid rgba(88, 166, 255, 0.15) !important;
+    border-radius: 8px !important;
+}
+
+/* Custom Tactical Info Card Styling */
+.custom-card {
+    border: 1px solid rgba(88, 166, 255, 0.12);
+    padding: 1.5rem;
+    border-radius: 12px;
+    background-color: rgba(13, 17, 23, 0.45);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    margin-bottom: 1.5rem;
+    transition: border-color 0.3s ease;
+}
+.custom-card:hover {
+    border-color: rgba(188, 140, 255, 0.3);
+}
+
+/* Glowing alert boundaries */
+.glowing-alert {
+    border-left: 5px solid #ff7b72;
+    background-color: rgba(248, 81, 73, 0.05);
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
