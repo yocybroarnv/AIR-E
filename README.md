@@ -1,4 +1,4 @@
-# 🌌 AIR-E: Aadhaar Integrity & Risk Engine
+# AIR-E: Aadhaar Integrity & Risk Engine
 ### *National Risk Overview & Real-Time Anomaly Intelligence Command Center*
 
 ---
@@ -16,19 +16,19 @@
 
 ---
 
-## 🚀 Key Features
+## Features
 
-*   **🌌 High-Fidelity Space-Tech UI**: A premium dark-themed administrative dashboard complete with glassmorphic cards, dynamic linear slider gradients, retro scanline styling, and pulsing state indicators.
-*   **🌐 3D Orbital Globe Reconnaissance**: An interactive, custom-shaded **Three.js 3D Globe** rotating in real-time, plotting geographical anomalies and risk clusters on its outer shell.
-*   **🤖 Unsupervised Anomaly Detection**: Integrates **Isolation Forest** algorithms to scan demographic metrics (biometric failures, update velocities, and document rejections) for anomalous behavior.
-*   **📈 Supervised Risk Forecasting**: Employs high-performance **XGBoost Regressor** pipelines to assign early-stage risk scores across registrar operations.
-*   **⚖️ Dynamic Policy Simulator**: An interactive "what-if" planning workbench. Adjust administrative rigors and immediately view projected leakage prevention (in Crores) balanced against citizen exclusion risks.
-*   **🔍 Explainable AI (XAI) Dashboard**: Powered by simulated **SHAP waterfall attributions** and active Pearson correlation matrices to explain precisely *why* a particular region's risk index has spiked.
-*   **🔒 DPDP & Privacy Aligned**: Z-Score engines run purely on anonymized and aggregated counts. Zero personal data (PII) is exposed or processed, ensuring full alignment with the **Digital Personal Data Protection (DPDP) Act**.
+*   ** High-Fidelity Space-Tech UI**: A premium dark-themed administrative dashboard complete with glassmorphic cards, dynamic linear slider gradients, retro scanline styling, and pulsing state indicators.
+*   ** 3D Orbital Globe Reconnaissance**: An interactive, custom-shaded **Three.js 3D Globe** rotating in real-time, plotting geographical anomalies and risk clusters on its outer shell.
+*   ** Unsupervised Anomaly Detection**: Integrates **Isolation Forest** algorithms to scan demographic metrics (biometric failures, update velocities, and document rejections) for anomalous behavior.
+*   ** Supervised Risk Forecasting**: Employs high-performance **XGBoost Regressor** pipelines to assign early-stage risk scores across registrar operations.
+*   ** Dynamic Policy Simulator**: An interactive "what-if" planning workbench. Adjust administrative rigors and immediately view projected leakage prevention (in Crores) balanced against citizen exclusion risks.
+*   ** Explainable AI (XAI) Dashboard**: Powered by simulated **SHAP waterfall attributions** and active Pearson correlation matrices to explain precisely *why* a particular region's risk index has spiked.
+*   ** DPDP & Privacy Aligned**: Z-Score engines run purely on anonymized and aggregated counts. Zero personal data (PII) is exposed or processed, ensuring full alignment with the **Digital Personal Data Protection (DPDP) Act**.
 
 ---
 
-## 🛠️ 3-Tier Architecture
+##  3-Tier Architecture
 
 To maintain maximum code cleanliness, clean modular design, and execution speeds, the codebase is consolidated into a robust, recruiter-friendly **3-script engine layout**:
 
