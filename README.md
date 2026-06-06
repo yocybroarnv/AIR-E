@@ -76,7 +76,7 @@ Launch the Streamlit web application:
 ```bash
 streamlit run app.py
 ```
-
+##Streamlit Run Application :- https://aadhaarintegrityriskengine.streamlit.app/
 ---
 
 ## 📊 Deep-Dive: Machine Learning Pipeline
